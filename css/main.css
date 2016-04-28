@@ -1,0 +1,210 @@
+/*---Global Reset---*/
+html,a,i,body,img,p,br,ul,li,ol,div,span,small,strong,h1,h2,h3,h4,h5,h6,header,footer,nav,article,section,menu {margin: 0;  padding: 0;  border: 0; font-size: 100%;  font:inherit;  vertical-align: baseline;}
+body {line-height: 1;  background: white;  color:black; }
+ul,ol {list-style: none; }
+:focus {outline: 0}
+/*---Custom Reset---*/
+.content {max-width: 1190px;  margin: 0 auto; }
+@font-face {font-family: AdventPro;  src:url("../fonts/Advent_Pro/AdventPro-Regular.ttf");  font-weight: normal; }
+@font-face {font-family: AdventPro;  src:url("../fonts/Advent_Pro/AdventPro-Bold.ttf");  font-weight: bold; }
+@font-face {font-family: AdventProMedium;  src:url("../fonts/Advent_Pro/AdventPro-Medium.ttf");  font-weight: bolder; }
+@font-face {font-family: OpenSans;  src:url("../fonts/Open_Sans/OpenSans-Regular.ttf");  font-weight: normal; }
+@font-face {font-family: OpenSans;  src:url("../fonts/Open_Sans/OpenSans-Bold.ttf");  font-weight: bold; }
+@font-face {font-family: OpenSansSemi; src:url("../fonts/Open_Sans/OpenSans-Semibold.ttf"); font-weight: normal;}
+* {	transition: all ease .3s; }
+
+/*---Header---*/
+header { z-index:1000; position: fixed; width: 100%;  height: 85px;  background-color: #000; color:white; text-transform: uppercase;  border-bottom: 5px solid #00aba9;  }
+/*To make Sticky styles work you have to uncomment function in "js/script.js". It make header change when it sticks.*/
+header.sticky {height: 50px; }
+.title {margin-top: 13px; margin-left: 0; padding-left : 9px; word-spacing: 2px;}
+.sticky .title {margin-top: 5px; }
+.title h2 {font-size: 37px;  font-family: AdventPro, Helvetica, Arial;  font-weight: bold; cursor:pointer; }
+.sticky .title h2 {float: left; }
+.title h2:hover{color: #008287; }
+.title h2 span {color: #008287; }
+.title h2:hover span {color:white; }
+.title span.tagline { padding-left: 2px;font-family:OpenSans;  font-size: 14px; float: left; letter-spacing: .9px;}
+.sticky .title span.tagline {padding-top: 15px;  padding-left: 10px; }
+nav.col-xs-6 {height: 80px;  padding-top: 40px; padding-right: 0; }
+.sticky nav {padding-top: 15px}
+nav ul {display: block;  margin-left: 91px; }
+nav ul li {display: inline-block;  margin-right: 43px; }
+nav ul li:last-child {margin-right: -3px; }
+nav ul li a {color:#e5e5e5;  font-family: AdventPro;  font-weight: bold;  font-size: 24px; word-spacing: -1px;}
+nav ul li a:hover {color:#008287;  text-decoration: none; }
+
+
+/*---Slider---*/
+.slide-wrapper {width: 100%;  padding-top: 80px; }
+.slide-wrapper.sticky {padding-top: 50px; }
+.slider {width: 100% ;  height: 100%; background-image: url("../images/slider.jpg");  background-size:100% 100%;  background-repeat:no-repeat;  text-transform: uppercase; border-bottom: 5px solid #00aba9; margin: 0; padding-top: 270px; padding-bottom: 265px; }
+
+.slider i { color:white;  width: 40px;  height: 40px;  background-color: #00aba9;  vertical-align: middle;  text-align: center;  padding-top: 10px;  margin-top: 17px; }
+.slider i:hover {background-color: #333; color: #00aba9; }
+.slider .fa-chevron-left {float: left; margin-left: 10px; }
+.slider .fa-chevron-right {float: right; margin-right: 10px; }
+
+.slider h1 {width: 92.5%; font-family: AdventProMedium; font-size: 72px; font-weight: normal; display: block; float: left; vertical-align: middle; text-align: center;letter-spacing: 0px; word-spacing: 1px;}
+.slider h1 a {color:#00aba9; }
+.slider h1 a:hover {color:white; text-decoration: none; }
+.slider h1 span {font-family: AdventPro; padding:1px 18px; background-color: #008287; color:white;font-weight: bold; }
+.slider h1 a:hover span {color:#00aba9; background-color: rgba(255,255,255,0); }
+
+
+/*---Main Content---*/
+.main {text-align: center; }
+.main h2 {padding-top: 95px; padding-bottom: 19px; border-bottom:1px solid #e9e9e9 ; text-transform: uppercase; font-family: AdventProMedium; font-size: 38px; font-weight: normal; }
+.main h2 span{font-family: AdventPro; font-weight: bold; }
+
+.about{color:#008287; padding-bottom: 95px; }
+.about h2, .blog-news h2 {color:#008287; }
+.about h2 span, .blog-news h2 span {color:#010101; }
+.about p {height: 115px; width: 1170px;margin-left: 11px;}
+.about p , .blog-news p, .services>p, .contacts p{font-family: OpenSans; font-size: 20px; margin-top: 19px;overflow: hidden; line-height: 28px;}
+.about p , .blog-news p {color:#555; }
+
+.services-wrapper {width: 100%; background-color: #008287; }
+.services, .contacts {color:#fff; }
+.services>p, .contacts p {margin-top: 22px;width: 1193px }
+.services h2 {margin-left: 5px;}
+.services h2, .contacts h2{border-bottom: 1px solid #ffffff; }
+.services h2 span, .contacts h2 span{color:#000; }
+.service-container {display: block; 	padding-bottom: 98px; margin-top:2px;margin-left: -3px; }
+.service-container li {	margin-top: 46px;  display: inline-block; 	margin-right: -7px;  height: 90px;  cursor: pointer; }
+.service-container li i {background: url("../images/service-icon-bg.png");  background-size: contain;  float: left;  display: block;  width: 81px;  height: 81px;  margin-right: 18px;  padding-top: 18px; }
+.service-container li:hover i{background: none; }
+
+.service-container .description {width: 270px;  float: left; }
+.service-container .description h3{font-family: AdventPro;  font-weight: bold;  font-size: 30px;  color:#000;  text-transform: uppercase; text-align: left; margin-top: -5px;}
+.service-container .description p {height: 64px; overflow: hidden; text-align: left;  font-family: OpenSans;  font-size: 16px; padding-top: 3px; line-height: 20px;}
+
+
+.blog-news  {padding-bottom: 82px;}
+.news-container { padding: 0;  margin: 48px 0 0 0px;  display: block;  width: 100%; }
+.news-container li { display: inline-block;  float: left;  width: 279px;  height: 183px;  color: white;  margin: 0 18px 18px 0 ;  overflow: hidden;  cursor: pointer; }
+.news-container li.news-1 {background: url("../images/news-1.jpg"); }
+.news-container li.news-2 {background: url("../images/news-2.jpg"); }
+.news-container li.news-3 {background: url("../images/news-3.jpg"); }
+.news-container li.news-4 {background: url("../images/news-4.jpg"); }
+.news-container li:first-child { margin-left: 10px;float:left;  width: 577px;  height: 385px;  background: url("../images/news-feature.jpg"); }
+.news-container li:nth-child(3),.news-container li:nth-child(5){ margin-right: -10px; }
+.news-container li .date { font-family: AdventPro;  font-weight: bold;  font-size: 16px;  display: block;  float: right;  padding:0 15px; line-height: 25px;  background-color: rgba(0,130,135,.7); }
+.news-container li:hover .date {margin-top: -50px; }
+.news-container li:first-child .date {background: rgba(0,0,0,.7); }
+.news-container li .preview {height: 34px; background: rgba(0,0,0,.7); margin-top: 138px; }
+.news-container li:hover .preview { margin-top: 200px;  }
+.news-container li:first-child .preview {height: 100px; background-color: rgba(0,130,135,.7); margin-top: 270px; }
+.news-container li .preview h3 {font-family: AdventPro; font-weight: bold; text-transform: uppercase; font-size: 18px; text-align: left; margin-left: 15px; line-height: 34px; }
+.news-container li:first-child .preview h3 {padding: 5px 0 0 0; font-size: 30px; color:black; line-height: 38px; }
+.news-container li:first-child:hover .preview {margin-top: 500px; }
+.news-container li .preview p {margin-top: 0;visibility: hidden; font-family: OpenSans; font-size: 16px; line-height: 20px; padding-left: 15px; text-align: left; color:#fefefe; }
+.news-container li:first-child .preview p {visibility: visible;height: 40px; }
+
+.contacts-wrapper {background: url("../images/contacts-bg.png"); border-bottom: 5px solid #00aba9; padding-bottom: 101px; }
+.contacts h2 {margin-left: 5px; padding-bottom: 18px;}
+.contact-info {margin-top: 50px; }
+.contact-info .map {background:url("../images/map.jpg"); -webkit-background-size: contain; background-size: contain; height: 208px; margin-left: 25px; margin-top: -2px;width: 677px;}
+.company-info h4 {width: 100%; font-family: OpenSans; font-size: 24px; text-align: left; padding-bottom: 12px; border-bottom: 1px solid #e9e9e9; margin-left: 2px; margin-top: -5px;}
+.company-info .address {margin-top: 18px; margin-left: 3px; line-height: 23px;font-family: OpenSans; font-size: 18px; float: left; text-align: left; }
+.company-info .phone-mail {margin-top: 17px; margin-right: -5px; font-family: OpenSans; font-size: 16px; float: right; text-align: right; line-height: 24px; }
+
+
+/*---Footer---*/
+footer {background-color: #000; color: #fff; height: 125px; width: 100%; line-height: 125px; }
+
+footer .terms {padding-left: 10px;}
+footer .terms h4 {font-family: AdventPro; font-weight: bold; text-transform: uppercase; font-size: 24px; float: left; cursor: pointer; letter-spacing: 1.3px; }
+footer .terms h4:hover {color:#008287; }
+footer .terms h4>span {color:#008287; }
+footer .terms h4:hover>span {color:white; }
+footer .terms small{font-family: OpenSans; font-size: 14px; padding-left: 14px; cursor: pointer; }
+footer .terms small:hover {color:#008287; }
+footer .terms small:before {content:"|  "; margin-right: 4px; margin-left: -4px;}
+
+.socials {padding-left: 125px; }
+.socials a {margin-right: 1px;}
+.socials i { width: 25px; height: 25px; text-align: center;padding-top: 5px;color:white; }
+.socials .fa-facebook {background-color: #2c509b; }
+.socials .fa-twitter {background-color: #1ab2e8; }
+.socials .fa-youtube {background-color: #b30600; }
+.socials .fa-instagram {background-color: #234260; }
+.socials .fa-pinterest {background-color: #ca1b22; }
+
+.copyright {font-family: OpenSans; font-size: 14px; float: right; text-align: right; padding-right: 10px;}
+.copyright span:last-child {font-family: OpenSansSemi;color:#008287; }
+
+
+/*---Responsive---*/
+@media (max-width:1170px) {
+	.content {width: 90%}
+	.title span.tagline {font-size: 12px; }
+
+	nav ul {margin-left: 50px; }
+	nav ul li {margin-right: 15px; }
+	nav ul li a {font-size: 18px; }
+
+	.slider {padding-top: 150px;  padding-bottom: 150px; }
+	.slider i {margin-top: 5px; }
+	.slider h1 {width: 80%; margin-left: 5%; font-size: 50px; }
+
+	.service-container li i {width: 61px; height: 61px; padding-top: 7px; }
+	.service-container .description {width: 200px; }
+	.service-container .description h3 {font-size: 24px; }
+	.service-container .description p {font-size: 11px; }
+
+	.news-container li {width: 27%; height: 140px; margin: 0 13px 10px 0; }
+	.news-container li:first-child {width: 40%; height: 290px; margin-left: 15px; }
+	.news-container li .preview {margin-top: 100px; }
+	.news-container li:first-child .preview {margin-top: 190px; }
+	
+	.contact-info .map {width: 50%;}
+
+	footer .terms h4 {font-size: 20px; }
+	footer .terms small {font-size: 10px; }
+	footer .temrs small:before {margin-right: 1px;}
+
+	footer .socials {padding-left: 5%; 	}
+	
+	footer .copyright {font-size: 12px; }
+}
+
+@media (max-width:1000px) {
+	.title h2 {font-size: 24px; padding-top: 15px}
+	.sticky .title h2{padding-top: 5px}
+	.title span.tagline {font-size: 9px; }
+	.sticky .title span.tagline {padding-top: 15px;  padding-left: 5px; }
+
+	nav ul {margin-left: 10%; }
+	nav ul li {margin-right: 5px; }
+	nav ul li a {font-size: 14px; }
+
+	.slider i {width: 30px; height: 30px; padding-top: 7px; }
+	.slider h1 {font-size: 38px; }
+
+	.service-container li {width: 45%; }
+	.service-container li i {margin-top: 25px; width: 41px; height: 41px; padding-top: 5px; }
+	.service-container li .description {width: 200px; }
+	.news-container li {height: 90px; }
+
+	.news-container li:first-child {height: 190px; }
+	.news-container li .date {font-size: 13px; line-height: 20px; width: 80px; height: 20px; }
+	.news-container li .preview {margin-top: 60px; height: 25px; }
+	.news-container li:first-child .preview {margin-top: 130px; height: 35px; }
+	.news-container li .preview h3 {font-size: 15px; line-height: 25px; }
+	.news-container li:first-child .preview h3 {font-size: 20px; line-height: 25px; }
+	.news-container li:first-child .preview p {visibility: hidden; }
+
+
+
+	footer {height: 80px; line-height: 80px; overflow: hidden; }
+
+	footer .terms {width: 25%; }
+	footer .terms h4 {font-size: 15px;}
+	footer .terms small {visibility: hidden; }
+
+	footer .socials {width: 50%; padding-left: 15%; }
+
+	footer .copyright {width: 25%; line-height: 15px; margin-top: 20px; }
+	footer .copyright span:last-child {display: block; width: 100%; }
+} 
